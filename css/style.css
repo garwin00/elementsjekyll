@@ -1,0 +1,406 @@
+/*--- reset ---*/
+
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 1em;
+  line-height: 1em;
+  border-radius: 0;
+}
+
+/*--- page setup ---*/
+
+:root {
+  font-size: 16px;
+}
+
+body {
+  background-color: #F5F5F5;
+  font-family: 'poppins', sans-serif;
+}
+
+/*--- landing style ---*/
+
+.landing_section {
+  height: 100vh;
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  font-family: "poppins", sans-serif;
+  letter-spacing: 2pt;
+  text-transform: uppercase;
+  color: #424242;
+  margin: 3rem 0;
+}
+
+.button {
+  width: 250px;
+  height: 3rem;
+  box-sizing: border-box;
+  border: 3px solid #424242;
+  color: #424242;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "poppins", sans-serif;
+}
+
+.button:hover {
+  color: #e0e0e0;
+  background-color: #424242;
+  transition: 0.3s ease-in-out;
+}
+
+a {
+  text-decoration: none;
+}
+
+/*--- box colours ---*/
+
+.grid .one{background-color: rgba(229, 115, 115, 0.6);}
+.grid .one:hover{background-color: #E57373; transition: .3s;}
+
+.grid .two{background-color: rgba(247, 169, 38, 0.6);}
+.grid .two:hover{background-color: #f7a926; transition: .3s;}
+
+.grid .three{ background-color: rgba(169, 100, 164, 0.6);}
+.grid .three:hover{background-color:#a964a4; transition: .3s;}
+
+.grid .four{background-color: rgba(194, 98, 123, 0.6);}
+.grid .four:hover{ background-color:#c2627b; transition: .3s;}
+
+.grid .five{background-color: rgba(135, 126, 171, 0.6);}
+.grid .five:hover{background-color:#877eab; transition: .3s;}
+
+.grid .six{background-color: rgba(129, 199, 132, 0.6);}
+.grid .six:hover{background-color: #81C784; transition: .3s;}
+
+/*--- header for item pages ---*/
+
+header {
+  height: 20vh;
+  background-color: #424242;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+header h1 {
+  color: #e0e0e0;
+}
+
+header a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.next {
+  background: none;
+  position: absolute;
+  right: 0;
+  padding-right: 1rem;
+  border: 0;
+  cursor: pointer;
+  color: #fff;
+  outline: none;
+}
+
+.needs-to-be-bigger {
+  font-size: 1.6rem;
+}
+
+
+/* --- menu ---*/
+
+.hamburger, .cross {
+  background: none;
+  position: absolute;
+  right: 0;
+  padding-right: 1rem;
+  border: 0;
+  font-size: 1.75rem;
+  cursor: pointer;
+  color: #fff;
+  outline: none;
+}
+
+.menu {
+  z-index: 2;
+  width: 33.333%;
+  height: 80vh;
+  background-color: #e0e0e0;
+  position: relative;
+  text-align: center;
+  float: right;
+  font-family: 'Poppins', sans-serif;
+  letter-spacing: 1pt;
+}
+
+.menu ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  list-style-type: none;
+}
+
+.menu li {
+  display: block;
+  height: calc(80vh / 7);
+  line-height: calc(80vh / 7);
+  box-sizing: border-box;
+  border-bottom: 1px solid #424242;
+}
+
+.menu li:hover {
+  background: #a7a9ac;
+}
+
+.menu a {
+  text-decoration: none;
+  color: #424242;
+}
+
+/* --- grid setup ---*/
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 50vh);
+  height: auto;
+}
+
+.grid_item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.grid_item:hover > a {
+  transform: scale(1.05);
+  transition: 0.2s ease-in-out;
+}
+
+/*--- flex setup ---*/
+
+.flex {
+  display: flex;
+  flex-basis: 50%;
+  max-width: 100%;
+  height: 80vh;
+}
+
+.flex_item {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/*--- container and shit ---*/
+
+.container {
+  max-width: 75%;
+  margin: 0 auto;
+  overflow: scroll;
+}
+
+.container::-webkit-scrollbar {
+  display: none;
+}
+
+.container p {
+  line-height: 1.6rem;
+  font-family: 'PT Serif', serif;
+}
+
+.container h2 {
+  font-family: "poppins", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2pt;
+}
+
+.container h3 {
+  font-family: "poppins", sans-serif;
+  height: 5rem;
+  font-size: 1.5rem;
+  width: calc(100% - 1rem);
+  background-color: #424242;
+  color: #e0e0e0;
+  padding-left: 1rem;
+  margin: 5rem 0;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+}
+
+iframe {
+  margin-bottom: 2.5rem;
+  width: 100%;
+  height: 300px;
+}
+
+h2 + h3,
+h3 + h3,
+p + h3,
+p + p,
+p + table{
+  margin-top: 3rem;
+}
+
+table {
+  width: 100%;
+  text-align: center;
+  color: #e0e0e0;
+  border-collapse: collapse;
+  font-size: .75rem;
+  margin-bottom: 2.5rem;
+  box-sizing: border-box;
+}
+
+th {
+  height: 3rem;
+  background-color: #424242;
+  border: 2px solid #424242;
+  font-size: .6rem;
+}
+
+td {
+  color: #424242;
+  height: 3rem;
+  border: 2px solid #424242;
+  width: 20%;
+  font-family: 'PT Serif', serif;
+  background-color: #F5F5F5;
+}
+
+.container hr {
+  width: 250px;
+  border: 1px solid #424242;
+  margin: 2.5rem auto;
+}
+
+.container a {
+  text-decoration: none;
+  padding-bottom: 0.5rem;
+  font-family: "poppins", sans-serif;
+  position: relative;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 10rem;
+  color: #424242;
+}
+
+.container a:hover {
+  color: #808285;
+  transition: 0.3s ease-in-out;
+}
+
+.left {
+  background-color: #e0e0e0;
+}
+
+.left img {
+  display: none;
+}
+
+footer {
+  height: 30vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+footer p {
+  line-height: 2.5rem;
+}
+
+footer a {
+  border-bottom: 3px solid transparent;
+  color: #808285;
+  padding-bottom: .25em;
+
+}
+
+footer a:hover {
+  border-bottom: 3px solid #424242;
+  transition: .3s;
+}
+
+/*--- media queries ---*/
+
+@media (max-width: 55em) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 40vh);
+  }
+
+  .menu {
+    width: 100%;
+    height: 80vh;
+  }
+
+  .menu li {
+    height: calc(80vh / 7);
+    line-height: calc(80vh / 7);
+  }
+
+  .flex {
+    display: block;
+  }
+
+  .flex_item {
+    width: 100%;
+  }
+
+  .left img {
+    display: block;
+    margin: 2.5rem auto;
+    padding: 2rem;
+  }
+
+  .right {
+    display: none;
+  }
+
+  body {
+    height: auto;
+  }
+
+  .container {
+    max-width: 85%;
+  }
+}
+
+@media (max-width: 35em) {
+  .grid {
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(6, 50vh);
+  }
+
+  .container {
+    max-width: 95%;
+    font-size: 0.85rem;
+  }
+
+  .container h3 {
+    font-size: 0.9rem;
+  }
+}
